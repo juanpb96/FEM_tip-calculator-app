@@ -12,24 +12,66 @@
 </head>
 <body>
 
-  Bill
+  <header>
+    <img src="./images/logo.svg" alt="Splitter logo">
+  </header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <main>
+    <div class="container-form">
+      
+      <div class="input-header">
+        <label class="title title--cyan" for="bill">Bill</label>
+        <p class="error error--active" id="error-bill">Can't be empty</p>
+      </div>
+      <div class="input-text input-text--cash">
+        <input type="text" name="bill" id="bill" placeholder="0">
+      </div>
+  
+      <h2 class="title title--cyan">Select Tip %</h2>
+      <div class="tip-buttons">
+        <button class="btn btn--cyan" type="button">5%</button>
+        <button class="btn btn--cyan" type="button">10%</button>
+        <button class="btn btn--cyan" type="button">15%</button>
+        <button class="btn btn--cyan" type="button">25%</button>
+        <button class="btn btn--cyan" type="button">50%</button>
+        <div class="input-text">
+          <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+        </div>
+      </div>
+  
+      <div class="input-header">
+        <label class="title title--cyan" for="number-people">Number of People</label>
+        <p class="error error--active" id="error-number-people">Can't be zero</p>
+      </div>
+      <div class="input-text input-text--people">
+        <input type="text" name="number-people" id="number-people" placeholder="0">
+      </div>
 
-  Number of People
+    </div>
 
-  Tip Amount
-  / person
+    <div class="container-result">
+      <section class="row">
+        <div class="description">
+          <h2 class="title title--white">Tip Amount</h2>
+          <h3 class="subtitle">/ person</h3>
+        </div>
 
-  Total
-  / person
+        <p class="result" id="tip-amount">$0.00</p>
+      </section>
 
-  Reset
+      <section class="row">
+        <div class="description">
+          <h2 class="title title--white">Total</h2>
+          <h3 class="subtitle">/ person</h3>
+        </div>
+
+        <p class="result" id="total">$0.00</p>
+      </section>
+
+      <button type="button" id="reset" disabled>Reset</button>
+    </div>
+
+  </main>
+
 </body>
 </html>
