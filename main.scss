@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import './sass/helpers/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-grayish-cyan1;
+}
+
+header {
+    img {
+        display: block;
+        margin: 3.125rem auto 2.5rem;
+    }
+}
+
+main {
+    width: 100%;
+    max-width: 920px;
+    padding: $s-large 0;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+}
+
+.error, .title {
+    font: 700 1rem/1.4812rem $font-family;
+}
+
+.error {
+    color: $red;
+}
+
+.title {
+    &--cyan {
+        color: $dark-grayish-cyan1;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
+
+.subtitle {
+    font: 700 0.8125rem/1.2031rem $font-family;
+    color: $dark-grayish-cyan2;
+}
+
+input, .btn, button {
+    display: block;
+    font: 700 1.5rem/2.2212rem $font-family;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}
+
+
+.container-form {
+    padding: 0 $s-large $s-large;
+
+    .input-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-text {
+        position: relative;
+        margin-top: 0.375rem;
+
+        input {
+            width: 100%;
+            padding: 0.375rem 1.0925rem;
+            color: $very-dark-cyan;
+            text-align: right;
+            background-color: $light-grayish-cyan2;
+        }
+
+        &--cash::before, 
+        &--people::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--cash::before {
+            content: "";
+            width: 11px;
+            height: 17px;
+            margin: 1rem 1.1875rem;
+            background-image: url(./images/icon-dollar.svg);
+        }
+
+        &--people::before {
+            content: "";
+            width: 13px;
+            height: 16px;
+            margin: 1rem 1.1875rem;
+            background-image: url(./images/icon-person.svg);
+        }
+    }
+
+    & > h2 {
+        margin-top: $s-large;
+    }
+
+    .tip-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: $s-large;
+        
+        .btn, .input-text {
+            width: 47%; 
+        }
+
+        .btn {
+            padding: 0.375rem 1rem;
+            color: $white;
+            background-color: $very-dark-cyan;
+
+            // It won't select the pre-last child: 
+            &:not(:nth-last-child(2)) {
+                margin-bottom: 1rem; 
+            }
+        }
+
+        .input-text {
+            margin: 0;
+        }
+    }
+}
+
+.container-result {
+    margin: 0 1.5rem;
+    background-color: $very-dark-cyan;
+    border-radius: 15px;
+    padding: 2.3125rem 1.375rem 1.5rem 1.5rem;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-child(1) {
+            margin-bottom: 1.25rem;
+        }
+
+        .result {
+            font: 700 2rem/2.9619rem $font-family;
+            letter-spacing: -0.67px;
+            color: $strong-cyan;
+        }
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 0.5625rem 2rem;
+        margin-top: $s-large;
+        color: $very-dark-cyan;
+        background-color: $strong-cyan;
+
+        &[disabled] {
+            background-color: $disabled-dark-cyan;
+        }
+    }
+}
