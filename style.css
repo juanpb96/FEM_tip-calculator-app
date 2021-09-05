@@ -32,7 +32,11 @@ main {
 }
 
 .error {
+  display: none;
   color: #e17456;
+}
+.error--active {
+  display: block;
 }
 
 .title--cyan {
@@ -120,6 +124,10 @@ button[disabled] {
 }
 .container-form .tip-buttons .btn:not(:nth-last-child(2)) {
   margin-bottom: 1rem;
+}
+.container-form .tip-buttons .btn--active {
+  color: #00494d;
+  background-color: #26c0ab;
 }
 .container-form .tip-buttons .input-text {
   margin: 0;

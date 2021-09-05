@@ -33,7 +33,12 @@ main {
 }
 
 .error {
+    display: none;
     color: $red;
+
+    &--active {
+        display: block;
+    }
 }
 
 .title {
@@ -136,6 +141,11 @@ button {
             // It won't select the pre-last child: 
             &:not(:nth-last-child(2)) {
                 margin-bottom: 1rem; 
+            }
+
+            &--active {
+                color: $very-dark-cyan;
+                background-color: $strong-cyan;
             }
         }
 
