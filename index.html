@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Tip calculator app</title>
 
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
 </head>
 <body>
 
@@ -21,30 +22,30 @@
       
       <div class="input-header">
         <label class="title title--cyan" for="bill">Bill</label>
-        <p class="error error--active" id="error-bill">Can't be empty</p>
+        <p class="error" id="error-bill">Can't be empty</p>
       </div>
       <div class="input-text input-text--cash">
-        <input type="text" name="bill" id="bill" placeholder="0">
+        <input type="text" name="bill" id="bill" placeholder="0" maxlength="20">
       </div>
   
       <h2 class="title title--cyan">Select Tip %</h2>
-      <div class="tip-buttons">
-        <button class="btn btn--cyan" type="button">5%</button>
-        <button class="btn btn--cyan" type="button">10%</button>
-        <button class="btn btn--cyan" type="button">15%</button>
-        <button class="btn btn--cyan" type="button">25%</button>
-        <button class="btn btn--cyan" type="button">50%</button>
+      <div class="tip-buttons" id="tip-buttons">
+        <button class="btn btn--cyan" type="button" value="5">5%</button>
+        <button class="btn btn--cyan" type="button" value="10">10%</button>
+        <button class="btn btn--cyan" type="button" value="15">15%</button>
+        <button class="btn btn--cyan" type="button" value="25">25%</button>
+        <button class="btn btn--cyan" type="button" value="50">50%</button>
         <div class="input-text">
-          <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+          <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom" maxlength="3" max="100" min="1">
         </div>
       </div>
   
       <div class="input-header">
         <label class="title title--cyan" for="number-people">Number of People</label>
-        <p class="error error--active" id="error-number-people">Can't be zero</p>
+        <p class="error" id="error-number-people">Can't be zero</p>
       </div>
       <div class="input-text input-text--people">
-        <input type="text" name="number-people" id="number-people" placeholder="0">
+        <input type="text" name="number-people" id="number-people" placeholder="0" maxlength="4">
       </div>
 
     </div>
