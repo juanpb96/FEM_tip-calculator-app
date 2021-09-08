@@ -196,8 +196,10 @@ button {
         width: 100%;
         padding: 0.5625rem 2rem;
         margin-top: $s-large;
-        color: $very-dark-cyan;
         background-color: $strong-cyan;
+        color: $very-dark-cyan;
+        font-size: 1.25rem;
+        line-height: 1.8513rem;
         text-transform: uppercase;
 
         &[disabled] {

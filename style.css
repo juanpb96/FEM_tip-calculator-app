@@ -171,8 +171,10 @@ button[disabled] {
   width: 100%;
   padding: 0.5625rem 2rem;
   margin-top: 2rem;
-  color: #00494d;
   background-color: #26c0ab;
+  color: #00494d;
+  font-size: 1.25rem;
+  line-height: 1.8513rem;
   text-transform: uppercase;
 }
 .container-result button[disabled] {
