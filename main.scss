@@ -198,9 +198,14 @@ button {
         margin-top: $s-large;
         color: $very-dark-cyan;
         background-color: $strong-cyan;
+        text-transform: uppercase;
 
         &[disabled] {
             background-color: $disabled-dark-cyan;
+
+            span {
+                opacity: 0.35;
+            }
         }
     }
 }

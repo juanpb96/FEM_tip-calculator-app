@@ -173,9 +173,13 @@ button[disabled] {
   margin-top: 2rem;
   color: #00494d;
   background-color: #26c0ab;
+  text-transform: uppercase;
 }
 .container-result button[disabled] {
   background-color: #0d686d;
+}
+.container-result button[disabled] span {
+  opacity: 0.35;
 }
 
 @media only screen and (min-width: 768px) {
