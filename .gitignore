@@ -16,4 +16,4 @@
 .prettierignore
 
 # Avoid md file
-*.md
+style-guide.md
