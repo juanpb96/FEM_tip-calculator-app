@@ -28,9 +28,11 @@ Users should be able to:
 ### Screenshot
 
 Solution in mobile 📱:
+
 ![Mobile preview](./design/mobile-preview.png)
 
 Solution in desktop 💻:
+
 ![Desktop preview](./design/desktop-preview.png)
 
 ### Links
@@ -59,7 +61,7 @@ First, I did want to use modules in my project to practice and understand again 
 <script type="module" src="script.js"></script>
 ```
 
-Then, I was able to start debugging my JS code. With this, I got another question: How can I prevent the user to write specific characters in my textboxes?. To solve this, I tried with some event listeners for keyboard input such as `keydown, `keyup` and `keypress`, but none of them was doing what I wanted. Finally, I decided searching for other options and I found out the event listener `input` which was the one that helped me. Check how I implemented this below:
+Then, I was able to start debugging my JS code. With this, I got another question: How can I prevent the user to write specific characters in my textboxes?. To solve this, I tried with some event listeners for keyboard input such as `keydown`, `keyup` and `keypress`, but none of them was doing what I wanted. Finally, I decided searching for other options and I found out the event listener `input` which was the one that helped me. Check how I implemented this below:
 
 ```js
 /* Code for Bill textbox */
